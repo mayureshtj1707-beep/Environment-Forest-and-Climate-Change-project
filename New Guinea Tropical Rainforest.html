@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>New Guinea Tropical Rainforest</title>
+  <link href="css/home.css" rel="stylesheet">
+</head>
+<style>
+  h1:hover {
+    color: orangered;
+    display: block;
+    /* width: 400px; */
+    height: auto;
+    cursor: pointer;
+    border-radius: 10PX;
+    box-shadow: 1px 2px 1px red;
+  }
+  p :hover {
+    color: orangered;
+  }
+
+  .para-container :hover {
+    color: red;
+    text-shadow: 0.5px 0.8px 0.5px red;
+    box-shadow: 20px 20px 20px grey;
+    border-radius: 20px;
+    background-color: bisque;
+  }
+
+  .primary-image-conatiner {
+    margin-left: 375px;
+    
+  }
+
+  .primary-image-conatiner :hover {
+    box-shadow: 10px 20px 7px gray;
+    border-radius: 20px;
+    animation: demoAnimation;
+    animation-duration: 3s;
+  }
+
+  @keyframes demoAnimation {
+  from {background-color: red;}
+  to {background-color: yellow;}
+
+  }
+
+  @keyframes paraAnimation {
+    0%   {background-color: rgb(200, 118, 118);}
+  25%  {background-color: rgb(160, 160, 105);}
+  50%  {background-color: rgb(134, 158, 160);}
+  100% {background-color: rgb(109, 154, 109);}
+  }
+
+  .image-sundarban {
+    background-image: url("images/Pichavaram Mangrove Forests.jpg"); 
+    width: 600px;
+    height: 400px;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+    transition: 0.15s;
+  }
+
+  .image-sundarban :hover {
+    transform: scale(1.02);
+  }
+
+  /* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.popup-container {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5)
+}
+
+.popup-background {
+    background-image: url("images/New Guinea Tropical Rainforest.jpg"); /* Replace with your image URL */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
+
+.popup-container:hover .popup-background {
+  transform: scale(1.2);
+}
+</style>
+<body>
+  <nav class="navbar container">
+    <div class="container">
+      <div class="logo">Environment</div>
+      <ul class="nav-links">
+        <div class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about-page.html">About</a></li>
+          <li class="services">
+            <h5>Forest</h5>
+            <ul class="dropdown divScroll">
+              <li><a href="Sundarbans,West Bengal.html" target="_blank">Sundarbans,West Bengal</a></li>
+              <li><a href="Jim Corbett National Park,Uttarakhand.html" target="_blank">Jim CorbettNational
+                  Park,Uttarakhand</a></li>
+              <li><a href="Kanha National Park, Madhya Pradesh.html" target="_blank">Kanha National Park, Madhya
+                  Pradesh</a></li>
+              <li><a href="Pichavaram Mangrove Forests.html" target="_blank">Pichavaram Mangrove Forests</a></li>
+              <li><a href="Gir_lion-Gir_forest,junagadh,gujarat,india.html" target="_blank">Gir_lion-Gir_forest</a></li>
+              <li><a href="Nilgiri Biosphere Reserve.html" target="_blank">Nilgiri BiosphereReserve</a></li>
+              <li><a href="Khasi Hills, Meghalaya.html" target="_blank">Khasi Hills, Meghalaya</a> </li>
+              <li><a href="Abujmarh, Chattisgarh.html" target="_blank">Abujmarh, Chattisgarh</a></li>
+              <li><a href="Mawphlang Sacred Forest.html" target="_blank">Mawphlang Sacred Forest</a></li>
+              <li><a href="Namdapha National Park.html" target="_blank">Namdapha National Park</a></li>
+              <li><a href="New Guinea Tropical Rainforest.html" target="_blank">New Guinea Tropical Rainforest</a></li>
+              <li><a href="Saranda Forest, Jharkhand.html" target="_blank">Saranda Forest, Jharkhand</a></li>
+              <li><a href="The Amazon Rainforest.html" target="_blank">The Amazon Rainforest</a></li>
+              <li><a href="Tropical rainforest in Borneo.html" target="_blank">Tropical rainforest in Borneo</a></li>
+              <li><a href="tropical rainforest in congo.html" target="_blank">tropical rainforest in congo</a></li>
+            </ul>
+          </li>
+          <li class="services">
+            <h5>Environment</h5>
+            <ul class="dropdown divScroll">
+              <li><a href="what is environment.html" target="_blank">what is environment</a></li>
+              <li><a href="world environment day.html" target="_blank">world environment day</a></li>
+              <li><a href="environmental science.html" target="_blank">environmental science</a></li>
+              <li><a href="environment agency.html" target="_blank">environment agency</a></li>
+              <li><a href="environmental impact assessment.html" target="_blank">environmental impact assessment</a></li>
+              <li><a href="natural environment.html" target="_blank">natural environment</a></li>
+              <li><a href="types of environment.html" target="_blank">types of environment
+                </a>
+              </li>
+              <li><a href="environmental management system.html" target="_blank">environmental management system</a>
+              </li>
+              <li><a href="environmental microbiology.html" target="_blank">environmental microbiology
+                </a>
+              </li>
+              <li><a href="global environment facility.html" target="_blank">global environment facility
+                </a></li>
+              <li><a href="Layers of the atmosphere.html" target="_blank">Layers of the atmosphere
+                </a></li>
+              <li><a href="Geological activity.html" target="_blank">Geological activity</a></li>
+              <li><a href="Ecosystems.html" target="_blank">Ecosystems</a></li>
+              <li><a href="Biogeochemical cycles.html" target="_blank">Biogeochemical cycles
+                </a></li>
+            </ul>
+          </li>
+          <li class="services">
+            <h5>ClimateChange</h5>
+            <ul class="dropdown divScroll">
+              <li><a href="what is climate-change-page .html">what is climate-change</a></li>
+              <li><a href="Hotter temperatures.html">Hotter temperatures</a></li>
+              <li><a href="More severe storms.html">More severe storms</a></li>
+              <li><a href="Increased drought.html">Increased drought</a></li>
+              <li><a href="A warming, rising ocean.html">A warming, rising ocean</a></li>
+              <li><a href="Loss of species.html">Loss of species</a></li>
+              <li><a href="Not enough food.html">Not enough food</a></li>
+              <li><a href="more health risks.html">More health risks</a></li>
+              <li><a href="poverty and displacement.html">Poverty and displacement</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-page.html">Contact us</a></li>
+          <li><a href="feed-back-from.html">Feedback</a></li>
+        </div>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <br><br>
+      <center>
+          <div class="popup-container">
+            <div class="popup-background"></div>
+            
+          </div>
+      </center>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <h1 style="margin-left: 50px; ;" class="">New Guinea Tropical</h1>
+            <br>
+            <div class="para-container" style="border-radius: 20px; box-sizing: 20px; border: double;">
+              <p  style="padding: 10px;">Papua New Guinea occupies the eastern half of the island of New Guinea and many outlying
+                islands to the north and east, with a land area of about 462,243 km2, a coastline of 20,197 km and an
+                Exclusive Economic Zone (EEZ) of 3,120,000 km2. The country possesses more than 5,000 lakes, extensive
+                river systems and wetlands. The species-rich mainland coastline includes more than 8,000 km of mangrove
+                swamps, lagoons, wetlands, coral reefs and atolls, plus island archipelagos and hundreds of offshore
+                islands.</p>
+              <p  style="padding: 10px;"> The country is remarkably diverse in terms of species, landscapes and ecosystems. The forests
+                of the island of New Guinea constitute the third largest expanse of tropical rainforest on the planet,
+                after the forests of the Amazon and the Congo Basin. Rainforests cover 28.2 million hectares of Papua New
+                Guinea and comprise 80% of the forest estate, with the rest of the forest estate comprised of dry evergreen
+                forest, swamp forest and mangroves. The total forest estate covers approximately 71% of the land area.</p>
+              <p  style="padding: 10px;">The flora of Papua New Guinea is poorly known. Scientists estimate that more than half the
+                plants and animals found in Papua New Guinea have yet to be scientifically named. Estimates for the number
+                of vascular plant species for the entire island of New Guinea range from 11,000 to 25,000 species. Endemism
+                probably exceeds 30% for Papua New Guinea and is well over 70% for Papuasia. Papua New Guinea harbors a
+                rich array of animals, including an estimated 150,000 species of insects, 314 species of freshwater fishes
+                (82 endemic), 641 species of amphibians and reptiles (328 endemic), 740 species of birds (77 endemic), and
+                276 species of mammals 69 endemic.</p>
+              <p  style="padding: 10px;">All main staple food crop species and fruits and nut species of the country have been
+                collected over the years, and are now conserved in “living collections” or field gene banks at various
+                Research Programme Centers of the National Agricultural Research Institute (NARI) located throughout the
+                country. The genetic diversity of major cash crop species, such as sugarcane, coffee, cocoa, coconut, palm
+                oil, rubber and tea, are maintained by their own research and development institutes or companies. Most of
+                this diversity has been introduced from gene banks located overseas.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <h1 style="margin-left: 150px;">YouTube videos</h1>
+            <br>
+            <div class="border border-dark" style="border-radius: 20px; padding: 15px;">
+              <div class="ratio ratio-16x9 mb-3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tNRjNGR44OI?si=eSuS9uGSsdOuHbnB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe width="400" height="270" src="https://www.youtube.com/embed/H4IsFmjpvmA?si=LZOz2yabt1fiE80Q"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container my-5">
+        <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright: krantiagrani dr.G. D Bapu lad mahavidyalaya,<br> kundal by: bca department & students
+        </div>
+        <!-- Copyright -->
+      </footer> 
+      </div>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Namdapha National Park</title>
+  <link href="css/home.css" rel="stylesheet">
+</head>
+<style>
+  h1:hover {
+    color: orangered;
+    display: block;
+    /* width: 400px; */
+    height: auto;
+    cursor: pointer;
+    border-radius: 10PX;
+    box-shadow: 1px 2px 1px red;
+  }
+  p :hover {
+    color: orangered;
+  }
+
+  .para-container :hover {
+    color: red;
+    text-shadow: 0.5px 0.8px 0.5px red;
+    box-shadow: 20px 20px 20px grey;
+    border-radius: 20px;
+    background-color: bisque;
+  }
+
+  .primary-image-conatiner {
+    margin-left: 375px;
+    
+  }
+
+  .primary-image-conatiner :hover {
+    box-shadow: 10px 20px 7px gray;
+    border-radius: 20px;
+    animation: demoAnimation;
+    animation-duration: 3s;
+  }
+
+  @keyframes demoAnimation {
+  from {background-color: red;}
+  to {background-color: yellow;}
+
+  }
+
+  @keyframes paraAnimation {
+    0%   {background-color: rgb(200, 118, 118);}
+  25%  {background-color: rgb(160, 160, 105);}
+  50%  {background-color: rgb(134, 158, 160);}
+  100% {background-color: rgb(109, 154, 109);}
+  }
+
+  .image-sundarban {
+    background-image: url("images/Pichavaram Mangrove Forests.jpg"); 
+    width: 600px;
+    height: 400px;
+    background-color: red;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+    transition: 0.15s;
+  }
+
+  .image-sundarban :hover {
+    transform: scale(1.02);
+  }
+
+  /* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.popup-container {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.5)
+}
+
+.popup-background {
+    background-image: url("images/namdapha-national-park.jpg"); /* Replace with your image URL */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 1s ease-in-out;
+}
+
+.popup-container:hover .popup-background {
+  transform: scale(1.2);
+}
+</style>
+<body>
+  <nav class="navbar container">
+    <div class="container">
+      <div class="logo">Environment</div>
+      <ul class="nav-links">
+        <div class="menu">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about-page.html">About</a></li>
+          <li class="services">
+            <h5>Forest</h5>
+            <ul class="dropdown divScroll">
+              <li><a href="Sundarbans,West Bengal.html" target="_blank">Sundarbans,West Bengal</a></li>
+              <li><a href="Jim Corbett National Park,Uttarakhand.html" target="_blank">Jim CorbettNational
+                  Park,Uttarakhand</a></li>
+              <li><a href="Kanha National Park, Madhya Pradesh.html" target="_blank">Kanha National Park, Madhya
+                  Pradesh</a></li>
+              <li><a href="Pichavaram Mangrove Forests.html" target="_blank">Pichavaram Mangrove Forests</a></li>
+              <li><a href="Gir_lion-Gir_forest,junagadh,gujarat,india.html" target="_blank">Gir_lion-Gir_forest</a></li>
+              <li><a href="Nilgiri Biosphere Reserve.html" target="_blank">Nilgiri BiosphereReserve</a></li>
+              <li><a href="Khasi Hills, Meghalaya.html" target="_blank">Khasi Hills, Meghalaya</a> </li>
+              <li><a href="Abujmarh, Chattisgarh.html" target="_blank">Abujmarh, Chattisgarh</a></li>
+              <li><a href="Mawphlang Sacred Forest.html" target="_blank">Mawphlang Sacred Forest</a></li>
+              <li><a href="Namdapha National Park.html" target="_blank">Namdapha National Park</a></li>
+              <li><a href="New Guinea Tropical Rainforest.html" target="_blank">New Guinea Tropical Rainforest</a></li>
+              <li><a href="Saranda Forest, Jharkhand.html" target="_blank">Saranda Forest, Jharkhand</a></li>
+              <li><a href="The Amazon Rainforest.html" target="_blank">The Amazon Rainforest</a></li>
+              <li><a href="Tropical rainforest in Borneo.html" target="_blank">Tropical rainforest in Borneo</a></li>
+              <li><a href="tropical rainforest in congo.html" target="_blank">tropical rainforest in congo</a></li>
+            </ul>
+          </li>
+          <li class="services">
+            <h5>Environment</h5>
+            <ul class="dropdown divScroll">
+              <li><a href="what is environment.html" target="_blank">what is environment</a></li>
+              <li><a href="world environment day.html" target="_blank">world environment day</a></li>
+              <li><a href="environmental science.html" target="_blank">environmental science</a></li>
+              <li><a href="environment agency.html" target="_blank">environment agency</a></li>
+              <li><a href="environmental impact assessment.html" target="_blank">environmental impact assessment</a></li>
+              <li><a href="natural environment.html" target="_blank">natural environment</a></li>
+              <li><a href="types of environment.html" target="_blank">types of environment
+                </a>
+              </li>
+              <li><a href="environmental management system.html" target="_blank">environmental management system</a>
+              </li>
+              <li><a href="environmental microbiology.html" target="_blank">environmental microbiology
+                </a>
+              </li>
+              <li><a href="global environment facility.html" target="_blank">global environment facility
+                </a></li>
+              <li><a href="Layers of the atmosphere.html" target="_blank">Layers of the atmosphere
+                </a></li>
+              <li><a href="Geological activity.html" target="_blank">Geological activity</a></li>
+              <li><a href="Ecosystems.html" target="_blank">Ecosystems</a></li>
+              <li><a href="Biogeochemical cycles.html" target="_blank">Biogeochemical cycles
+                </a></li>
+            </ul>
+          </li>
+          <li class="services">
+            <h5>ClimateChange</h5>
+            <ul class="dropdown divScroll">
+              <li><a href="what is climate-change-page .html">what is climate-change</a></li>
+              <li><a href="Hotter temperatures.html">Hotter temperatures</a></li>
+              <li><a href="More severe storms.html">More severe storms</a></li>
+              <li><a href="Increased drought.html">Increased drought</a></li>
+              <li><a href="A warming, rising ocean.html">A warming, rising ocean</a></li>
+              <li><a href="Loss of species.html">Loss of species</a></li>
+              <li><a href="Not enough food.html">Not enough food</a></li>
+              <li><a href="more health risks.html">More health risks</a></li>
+              <li><a href="poverty and displacement.html">Poverty and displacement</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-page.html">Contact us</a></li>
+          <li><a href="feed-back-from.html">Feedback</a></li>
+        </div>
+      </ul>
+    </div>
+    </div>
+  </nav>
+<br><br>
+  <center>
+          <div class="popup-container">
+            <div class="popup-background"></div>
+            
+          </div>
+      </center>
+      <div class="container mt-5 mb-5">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-6">
+            <h1 style="margin-left: 50px; ;" class="">Namdapha-national-park</h1>
+            <br>
+            <div class="para-container" style="border-radius: 20px; box-sizing: 20px; border: double;">
+              <p  style="padding: 10px;">The fourth largest national park in the country covering an area of 1985 sq. km, Namdapha is
+                a rich bio diverse hotspot with 1000 floral and 1400 faunal species, extensive bamboo forest and evergreen
+                rainforests in the Eastern Himalayas. Nam means water and dapha refers to origin. It was originally a
+                wildlife sanctuary and later became a Tiger Reserve in 1983.</p>
+              <p  style="padding: 10px;"> Namdapha National Park is a 1,985 km2 (766 sq mi) large protected area in Arunachal Pradesh
+                of Northeast India. The park was established in 1983. With more than 1,000 floral and about 1,400 faunal
+                species, it is a biodiversity hotspot in the Eastern Himalayas. The national park harbours the northernmost
+                lowland evergreen rainforests in the world at 27°N latitude. It also harbours extensive dipterocarp
+                forests, comprising the northwestern parts of the Mizoram-Manipur-Kachin rain forests ecoregion.It is the
+                fourth largest national park in India.</p>
+              <p  style="padding: 10px;">Namdapha was originally declared a Wildlife Sanctuary in 1972, then a National Park in 1983
+                and became a Tiger Reserve under the Project Tiger scheme in the same year. Its name was a combination of
+                two Singpho words, namely "nam" which means water, and "dapha" which means origin the river originates from
+                the Dapha Bum glaciers.[citation needed] Namdapha National Park is located in Changlang district of the
+                Northeast Indian state of Arunachal Pradesh, near the international border with Myanmar. It spans an area
+                of 1,985 km2 (766 sq mi) including a core area of 1,808 km2 (698 sq mi) and a surrounding buffer zone of
+                177 km2 (68 sq mi). It is located between the Dapha bum range of the Mishmi Hills and the Patkai range with
+                a wide</p>
+              <p  style="padding: 10px;">The Namdapha flying squirrel Biswamoyopterus biswasi was first collected in the park and
+                described. It is endemic to the park and critically endangered. It was last recorded in 1981 in a single
+                valley within the park.Because of the elevation range from 300 to 4,500 m 980 to 14,760 ft and vegetation
+                zones from evergreen, moist deciduous to temperate broadleaved and coniferous forest types to alpine
+                vegetation, the park is home to a great diversity of mammal species. Four pantherine species are found in
+                the park: leopard Panthera pardus, snow leopard P. uncia,tiger P. tigris and clouded leopard Neofelis .</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <h1 style="margin-left: 150px;">YouTube videos</h1>
+            <br>
+            <div class="border border-dark" style="border-radius: 20px; padding: 15px;">
+              <div class="ratio ratio-16x9 mb-3">
+                <iframe width="400" height="270" src="https://www.youtube.com/embed/fIfgKwkWtno?si=kmPva31miKGV-9gu"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="ratio ratio-16x9 mb-4">
+                <iframe width="400" height="270" src="https://www.youtube.com/embed/j4pHwWMpElw?si=QJvj8EmVLnK38cP6"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="container my-5">
+        <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright: krantiagrani dr.G. D Bapu lad mahavidyalaya,<br> kundal by: bca department & students
+        </div>
+        <!-- Copyright -->
+      </footer> 
+      </div>
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
